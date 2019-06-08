@@ -1,0 +1,17 @@
+package mapex;
+
+import java.util.HashMap;
+
+public class unorderedvsOrdered {
+
+	static void test() {
+		Map<String,String> unorderedMap = new HashMap<>();
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

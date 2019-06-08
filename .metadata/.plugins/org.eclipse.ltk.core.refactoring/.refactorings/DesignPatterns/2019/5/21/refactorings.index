@@ -1,0 +1,22 @@
+1558663597577	Rename type 'Abc'
+1558663674831	Rename field 'number'
+1558664757289	Rename package 'Singleton1'
+1558664770902	Rename package 'builderPattern'
+1558664786375	Rename type 'BuilderPattern'
+1558664806135	Rename type 'Builder'
+1558664828397	Rename type 'SingletonDesign1'
+1558664842728	Rename type 'SingletonDesign2'
+1558664867318	Rename package 'singleton1'
+1558664886397	Rename package 'singletonEager'
+1558665147193	Copy compilation unit
+1558665164790	Rename type 'SingletonLazy'
+1558665599509	Copy package
+1558665729718	Rename type 'SingletonEager'
+1558666240723	Copy package
+1558666268565	Rename type 'SingletonLazySynchronized'
+1558709503540	Rename type 'Builder1'
+1558712537484	Rename compilation unit 'Car.java'
+1558712758705	Delete element
+1558717451864	Delete element
+1558731390287	Copy packages
+1558731498218	Copy packages

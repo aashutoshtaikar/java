@@ -1,0 +1,12 @@
+package com.marlabs.day2;
+
+public class SingletonDemo {
+	private static SingletonDemo mySingleton = new SingletonDemo();
+	
+	private 
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

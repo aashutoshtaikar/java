@@ -1,0 +1,13 @@
+package com.marlabs.day1;
+
+public class EmployeeDemo {
+
+	public static void main(String[] args) { // Execution logic class
+		Employee employee = new Employee();
+		System.out.println(employee);
+
+		Employee employee2 = new Employee().name("Aashutosh").basic(200).commission(50).deptNumber(101);
+		System.out.println(employee2);
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.marlabs.day3;
+
+class Demo {
+	protected int i;
+}
+
+class Demo1 extends Demo {
+
+}
+
+class Demo2 extends Demo1{
+//	i = 10; // compile time error this place is for new variable decl  
+	{i = 10;}  
+	void display() {
+		System.out.println("diplaying..");
+	}
+}
+
+public class InheritanceProblem {
+
+	public static void main(String[] args) {
+
+	}
+
+}

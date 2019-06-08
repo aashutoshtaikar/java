@@ -1,0 +1,49 @@
+package singleton.singleton4;
+
+
+class God{
+	
+	static God staticoObj;
+	
+	private God() {
+		System.out.println("creating instance");
+	}
+	
+	//Thread safe singleton without overhead of synchronized
+	public static God getInstance() {
+		
+		if(staticoObj==null) {
+			
+			synchronized (God.class) {
+				if(staticoObj==null)
+					staticoObj = new God();
+			}
+		}
+		
+		return staticoObj;
+	}
+	
+}
+
+public class SingletonLazyDoubleChecked {
+	
+	static void withDoubleCheck() throws Exception {
+		Thread t1 = new Thread(()->{DBmodule myGod = DBmodule.getInstance();});
+		Thread t2 = new Thread(()->{DBmodule yourGod = DBmodule.getInstance();});
+		Thread t3 = new Thread(()->{DBmodule yourGod1 = DBmodule.getInstance();});
+		Thread t4 = new Thread(()->{DBmodule yourGod2 = DBmodule.getInstance();});
+
+		
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+
+	}
+	
+	public static void main(String[] args) throws Exception {
+		withDoubleCheck();
+		
+	}
+
+}

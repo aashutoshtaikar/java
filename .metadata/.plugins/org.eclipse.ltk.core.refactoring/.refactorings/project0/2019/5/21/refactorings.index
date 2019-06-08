@@ -1,0 +1,69 @@
+1558308319003	Copy compilation unit
+1558308365052	Delete element
+1558308383541	Move compilation unit
+1558308402531	Move compilation unit
+1558308426030	Move compilation unit
+1558308551134	Move compilation unit
+1558308568152	Move compilation unit
+1558308574811	Move compilation unit
+1558308631643	Rename type 'program'
+1558308653136	Rename type 'firstcode'
+1558308676182	Rename type 'switch_example'
+1558318380890	Encapsulate field 'name'
+1558319512023	Encapsulate field 'name'
+1558319604246	Encapsulate field 'name'
+1558319618839	Encapsulate field 'name'
+1558319647986	Encapsulate field 'chasis_number'
+1558321471910	Rename field 'name'
+1558321526618	Rename method 'setName'
+1558321539847	Rename method 'getName'
+1558321742650	Rename type 'MultipleInheritance'
+1558333597647	Rename package 'AbstractandInterface'
+1558373889637	Rename package 'abstractVsInterface'
+1558449783485	Rename type 'DemoImpl'
+1558452314543	Rename type 'Chasis'
+1558452324690	Rename type 'Chasis'
+1558492815130	Move compilation units
+1558492824796	Delete element
+1558493689277	Rename type 'IChasis'
+1558493705668	Rename type 'IAdvancedChasis'
+1558493718159	Rename type 'MercedesCClass'
+1558493725705	Rename type 'BMW'
+1558493763575	Rename method 'createSpecialChasis'
+1558493854142	Rename method 'createChasis'
+1558494568125	Rename package 'interfaceExamples'
+1558494622450	Delete element
+1558494665585	Delete elements
+1558494770618	Rename type 'IWriter'
+1558494777847	Rename type 'IShapes'
+1558494809871	Delete element
+1558494901519	Delete element
+1558494958425	Move compilation units
+1558494981960	Move compilation unit
+1558494996050	Delete element
+1558495008411	Delete element
+1558502654745	Copy compilation unit
+1558503194625	Move compilation unit
+1558562760276	Delete element
+1558564844256	Rename method 'ExceptionHandlingExample'
+1558564899650	Rename type 'ExceptionsEg'
+1558566065905	Rename type 'ExceptionHandling'
+1558569920407	Move compilation unit
+1558570049676	Copy compilation unit
+1558570078525	Rename type 'MultipleCatch'
+1558570107561	Rename type 'MethodReferencing'
+1558571130195	Copy compilation unit
+1558574520621	Rename type 'ThreadPriority'
+1558574551896	Copy compilation unit
+1558580991060	Move compilation unit
+1558661741755	Rename type 'CollectionsClass'
+1558731381999	Rename package 'DesignPatterns'
+1558731485350	Delete elements
+1558731570585	Delete elements
+1558731601162	Delete elements
+1558731623524	Delete element
+1558731649252	Move compilation unit
+1558731658367	Delete element
+1558733483784	Copy compilation unit
+1558733756096	Delete element
+1558804571415	Copy compilation unit

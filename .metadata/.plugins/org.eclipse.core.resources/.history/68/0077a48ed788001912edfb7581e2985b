@@ -1,0 +1,9 @@
+package com.marlabs.day1.constructors;
+
+public class EmployeeConsDemo {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,18 @@
+Day3
+=====
+
+1. Types if relations in java
+2. Object class methods
+3. Abstract classes and interfaces
+4. Dynamic binding concepts
+5. Some programs on this
+
+  	Types of Relations in Java:
+  	
+  	1. Is-A 		>> Generalization ==> Inheritance
+  	
+  	
+  	2. Has-A		>> Aggregation    ==> Composition
+  	
+  	
+  	3. Uses-A 		>> Association    ==> Comp 

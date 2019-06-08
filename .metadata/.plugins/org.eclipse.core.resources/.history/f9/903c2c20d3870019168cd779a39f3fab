@@ -1,0 +1,21 @@
+package multithreading;
+
+public class ThreadName {
+
+	public static void main(String[] args) {
+		Thread t1 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				System.out.println("hello from t1");
+			}
+		}, "t1 thread");
+		
+		Thread t2 = new Thread(()->{
+			System.out.println("hello from t2");
+		}, "t1 thread");
+		
+		
+	}
+
+}

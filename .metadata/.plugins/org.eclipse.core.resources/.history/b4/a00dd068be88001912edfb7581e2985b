@@ -1,0 +1,9 @@
+package com.marlabs.day1;
+
+public class EmployeeDemo {
+
+	public static void main(String[] args) { //Execution logic class
+		System.out.println();
+	}
+
+}

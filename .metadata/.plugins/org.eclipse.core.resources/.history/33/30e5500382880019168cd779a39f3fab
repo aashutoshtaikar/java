@@ -1,0 +1,17 @@
+package oop;
+
+/*Differenct ways to create object
+ * 1. new operator
+ * 2. clone method
+ * 3. Using De-serialization
+ * 4. Using class.forName("fully qualified name eof a class").newInstance()
+ * */
+
+public class OOP1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

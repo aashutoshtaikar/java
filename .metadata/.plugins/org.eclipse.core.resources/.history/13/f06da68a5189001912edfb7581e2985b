@@ -1,0 +1,11 @@
+package com.marlabs.day3.typesofrelation;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		Address localAddr = new Address(183, "Rutgers", 183, 8854, "Piscataway");
+		Address permAddr = new Address(18, "Rut", 18, 884, "Pisca");
+
+	}
+
+}

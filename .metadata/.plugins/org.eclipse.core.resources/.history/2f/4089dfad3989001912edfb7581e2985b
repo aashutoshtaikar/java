@@ -1,0 +1,19 @@
+package com.marlabs.day2;
+
+class Demo {
+	int a;
+	static int b;
+
+	public void int a(int a) {
+		this.a = a;
+	}
+}
+
+public class StaticDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

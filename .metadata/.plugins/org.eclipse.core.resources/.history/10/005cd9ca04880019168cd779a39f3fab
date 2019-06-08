@@ -1,0 +1,46 @@
+package singleton;
+
+//	The DBmodule must have only one instance as one update must be read 
+//, thus singleton pattern is used
+
+class DBmodule{
+	private String name;
+	
+	//Eager instantiation
+	static DBmodule staticoObj = new DBmodule();
+	
+	private DBmodule() {
+	}
+	
+	public static DBmodule getInstance() {
+		return staticoObj;
+	}
+	
+	public static void setname(String val) {
+		staticoObj.name = val;
+	}
+	
+	public static String getname() {
+		return staticoObj.name;
+	}
+	
+	//static factory method instead of constructor
+	public static DBmodule rename(String val) {
+		staticoObj.name = val;
+		return staticoObj;
+	}
+}
+
+public class Singleton {
+
+	public static void main(String[] args) {
+		DBmodule updateFromNJ = DBmodule.rename("updated from New Jersey");
+		
+		DBmodule updateFromOR = DBmodule.getInstance();
+		System.out.println(updateFromOR.getname());
+		
+		updateFromOR.rename("updated from Oregon");
+		System.out.println(updateFromNJ.getname());
+	}
+
+}

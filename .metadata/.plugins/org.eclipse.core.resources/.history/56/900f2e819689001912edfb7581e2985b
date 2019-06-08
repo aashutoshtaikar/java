@@ -1,0 +1,29 @@
+package com.marlabs.day3.objectclassmethods;
+
+public class Customer {
+	private int id;
+	private String name;
+	private String password;
+	private String cityName;
+
+	/**
+	 * @param id
+	 * @param name
+	 * @param password
+	 * @param cityName
+	 */
+	public Customer(int id, String name, String password, String cityName) {
+		this.id = id;
+		this.name = name;
+		this.password = password;
+		this.cityName = cityName;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", " + (name != null ? "name=" + name + ", " : "")
+				+ (password != null ? "password=" + password + ", " : "")
+				+ (cityName != null ? "cityName=" + cityName : "") + "]";
+	}
+
+}

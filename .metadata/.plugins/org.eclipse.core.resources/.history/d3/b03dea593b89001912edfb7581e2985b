@@ -1,0 +1,54 @@
+day2:
+=====
+
+Topic-1:
+
+>> static VS instance variables
+>> static VS instance methods
+>> static VS instance blocks
+
+Topic-2:
+
+>>Inheritance
+>>super
+	@variable level
+	@method level
+	@constr level
+
+>>final
+	@variable level
+	@method level
+	@constr level
+	
+>>Singleton design pattern
+
+  #JVM internal memory:
+  ====================
+  instance variables -> seperate mem locations per object (object level dependency, independent from class dependency)
+  static variables -> same mem location allocated as per class (class level dependency, independent from objects dependency)
+  
+  # JVM architecture
+  Byte code(static variables, methods, block) -> Class loader subsystem
+  
+  # Static VS instance methods:
+  ============================
+  Static 	-> one time operations(eg. getting a connection from db)
+  instance  -> repeated operations(eg. reading data from file)
+  
+  Static methods 
+  -> can access static variables only
+  -> to call, no object needed
+  
+  instance methods 
+  -> can access static as well as instance variables
+  -> to call, object required 
+  
+  # Need of static block: 
+  static {}
+  To enable log 4J function - as static block executes before main method
+  Log 4J - open source framework for recording activity of the application
+  
+  # Instance block : 
+  {}
+  Executed whenever we create an object
+  Executed before constructor call

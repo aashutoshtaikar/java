@@ -1,0 +1,13 @@
+package com.marlabs.day3.typesofrelation;
+
+import java.util.Set;
+
+public class Employee {
+	int number;
+	String name;
+	
+	Address localAddress;
+	Address permanentAddress;
+	
+	private Set<Address> addressList;
+}

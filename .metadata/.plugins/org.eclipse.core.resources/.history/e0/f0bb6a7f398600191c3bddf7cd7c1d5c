@@ -1,0 +1,25 @@
+package mapex;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class unorderedvsOrdered {
+
+	static void test() {
+		Map<String,String> unorderedMap = new HashMap<>();
+		unorderedMap.put("apple", "apple");
+		unorderedMap.put("Mango", "mango");
+		unorderedMap.put("bill", "Bill");
+		unorderedMap.put("cart", "cart");
+		
+		for (Map<String,String> i : unorderedMap) {
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

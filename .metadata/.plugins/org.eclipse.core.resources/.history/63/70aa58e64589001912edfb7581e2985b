@@ -1,0 +1,21 @@
+package com.marlabs.day3;
+
+class Demo {
+	protected int i;
+}
+
+class Demo1 extends Demo {
+
+}
+
+class Demo2 extends Demo1{
+	{i = 10;} // compile time error 
+}
+
+public class InheritanceProblem {
+
+	public static void main(String[] args) {
+
+	}
+
+}

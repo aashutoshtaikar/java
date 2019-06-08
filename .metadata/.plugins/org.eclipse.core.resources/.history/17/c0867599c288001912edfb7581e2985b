@@ -1,0 +1,55 @@
+package com.marlabs.day1;
+
+public class Employee { // Business logic class
+	int number;
+	String name;
+	String type;
+	double basic;
+	double commission;
+	int deptNumber;
+	private String password;
+
+	@Override
+	public String toString() {
+		return "Employee [number=" + number + ", name=" + name + ", type=" + type + ", basic=" + basic + ", commission="
+				+ commission + ", deptNumber=" + deptNumber + ", password=" + password + "]";
+	}
+
+	// using partial builder
+
+	// non static factory methods
+	public Employee number(int number) {
+		this.number = number;
+		return this;
+	}
+
+	public Employee name(String name) {
+		this.name = name;
+		return this;
+	}
+
+	public Employee type(String type) {
+		this.type = type;
+		return this;
+	}
+
+	public Employee basic(double basic) {
+		this.basic = basic;
+		return this;
+	}
+
+	public Employee commission(int comm) {
+		this.commission = comm;
+		return this;
+	}
+
+	public Employee deptNumber(int deptNum) {
+		this.deptNumber = deptNum;
+		return this;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
