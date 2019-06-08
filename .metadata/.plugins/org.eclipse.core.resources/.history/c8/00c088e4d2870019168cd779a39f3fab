@@ -1,9 +1,0 @@
-package multithreading;
-
-public class ThreadName {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

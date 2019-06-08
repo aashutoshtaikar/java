@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;Streams&apos; to &apos;streams&apos;&#x0A;- Original project: &apos;project0&apos;&#x0A;- Original element: &apos;project0/src/Streams&apos;&#x0A;- Renamed element: &apos;project0/src/streams&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename subpackages of the package" description="Rename package &apos;Streams&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Streams" name="streams" qualified="false" references="true" stamp="1559111172880" textual="false" version="1.0"/>
-</session>

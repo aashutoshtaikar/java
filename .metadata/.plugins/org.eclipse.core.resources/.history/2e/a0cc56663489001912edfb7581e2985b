@@ -1,9 +1,0 @@
-package com.marlabs.day1.constructors;
-
-public class ThisDemo {
-
-	public static void main(String[] args) {
-		
-	}
-
-}
