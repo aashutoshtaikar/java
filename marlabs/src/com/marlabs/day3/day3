@@ -95,7 +95,7 @@ Day3
   		It is possible to override the HashCode() method for any Object class
   		 
   	3. boolean equals();
-  		In object class impl equality wont check based on object class it will compare the reference
+  		In object class implementation equality wont check based on object class it will compare the reference
   		by default It will not check the content
   		
   		What is the need to override both equals and hashcode method?
@@ -136,3 +136,143 @@ Day3
   		Is it possible to create your own Marker interface?
   		
   	# while overriding we can increase the visibility(access) but not vice versa
+  	
+  	# native methods call the C/C++ code internally
+  	
+  	===============================
+  	Abstract classes and interfaces
+  	===============================
+  	
+  	# Why we need having an abstract method? 
+  	 =>For defining a protocol
+  		For hiding the imp 
+  		For impl general mandatory property
+  		To force the subclass dev to adhere to the protocols which we specify in the base class
+  			 
+  	 => If we dont have a protocol 
+  	 	someone extending this class may have his own name
+  		polymorphism would not be possible 
+  	
+  	
+  	#Interfaces:
+  	============
+  	>> In interface we have 
+  		by default -> public abstract methods
+  		java 7/8 -> we also can have default impl methods
+  		
+  		public static final variables only
+  	
+  	>> Muliple inheritance is possible
+  	
+  	>> Interface to Class - implements keyword
+  	
+  	>> Interface inheritance is possible - Interface to Interface - extends keyword
+  	
+  	>> Combination of extends and implements keywords
+  		extends - 1st keyword
+  		implements - 2nd keyword
+  		
+  		
+  	>> Example:
+  		
+  	public interface IEmployee{
+  		public abstract void setEmpPassword();
+  		public abstract String getEmpPassword();
+  		public abstract void doSalaryCalculation();
+  		void displaySalaryStatement(); //public abstract void displaySalaryStatement();
+  	
+  		public final static double DA_PERCENTILE = 0.03d;
+  		double HRA_PERCENTILE = 0.04;  // public final static double HRA_PERCENTILE = 0.04; 
+  	}
+  	
+  	class PEmployee implements IEmployee{
+  		//setEmpPassword
+  		//getEmpPassword
+  		//doSalaryCalculation
+  		//displaySalaryStatement
+  	}
+  	
+  	class CEmployee implements IEmployee{
+  		//setEmpPassword
+  		//getEmpPassword
+  		//doSalaryCalculation
+  		//displaySalaryStatement
+  	}
+  	
+  	class HEmployee implements IEmployee{
+  		//setEmpPassword
+  		//getEmpPassword
+  		//doSalaryCalculation
+  		//displaySalaryStatement
+  	}
+  	
+  	while implementing the IEmployee interface
+  	here we have to write the same methods for the interface even though not required
+  	
+  	Solution:
+  	=========
+	Use abstract class while implementing interface
+	
+	Employee.java
+	public abstract Employee implements IEmployee{
+		
+	} 
+	
+	PEmployee.java
+	public abstract PEmployee extends Employee{
+		//BL
+	} 
+	
+	HEmployee.java
+	public abstract HEmployee extends Employee{
+		//BL
+	} 
+	
+  	Practical scenario:
+  	===================
+  	
+  		Servlet interface
+  			||	5-life cycle methods -> service(), init(), getConfig(), getServletInfo(), destroy();
+  			||
+  		GenericServlet abstract class
+  			|| overriden 4 methods from interface 
+  			||	left unimplemented service method
+  		HttpServlet abstract class
+  			||	over-ridden 4 methods from interface
+  			||	left unimplemented service methods
+  			||
+  		Public class EmployeeRegistrationServlet extends HttpServlet{
+  			//doGet, doPost, service(); 
+  		} 
+  	
+  	# Internal implementation will be hidden from the user if he referes the methods 
+  		Abstract classes and interfaces -> Data abstraction 
+  	
+  	
+  	Next Session:
+  	============
+  	>> Exception Handling
+  	>> IO package
+  		- Serialization
+  		- De-serialization
+  	>> Few interview questions on these concepts
+  	
+  	>> String and StringBuffer API
+  	>> Java.util.*;
+  			Date
+  			Calendar
+  			Random
+  			StringTokenizer
+  			
+  	>> Java.text.*
+  			DateFormat
+  			SimpleDateFormat
+  			
+  	>> Coding examples 
+  	
+  	After: 
+  	
+  	Collections framework
+  	JUNIT
+  	JDBC
+  	JDK1.8 features

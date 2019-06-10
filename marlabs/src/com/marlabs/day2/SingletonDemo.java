@@ -6,7 +6,7 @@ import java.util.Map;
 public class SingletonDemo {
 
 //	private static SingletonDemo mySingleton = new SingletonDemo(); //eager instantiation
-	private static SingletonDemo mySingleton;
+	private static SingletonDemo mySingleton = null;
 
 	private SingletonDemo() {
 		System.out.println("from constr");
@@ -15,7 +15,7 @@ public class SingletonDemo {
 	// synchronized => threadsafe
 	public synchronized static SingletonDemo getInstance() {
 		if (mySingleton == null) {
-			mySingleton = new SingletonDemo(); // lazy
+			mySingleton = new SingletonDemo(); // lazy instantiation
 		}
 		return mySingleton;
 	}

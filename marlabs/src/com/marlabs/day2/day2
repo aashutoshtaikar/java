@@ -142,6 +142,13 @@ Topic-2:
   			@variable level
   			@method level
   			@class level
+  			
+  		final classes examples:
+  			String
+  			StringBuffer
+  			StringBuilder
+  			Math
+  			All the wrapper classes
   	
   	Method overriding:
   	==================

@@ -1,0 +1,127 @@
+Day4:
+============
+>> IO package
+  	- Serialization
+  	- De-serialization
+  	- Best way of doing singleton class
+  	
+>> String and string buffers
+
+>> Example programs
+
+
+Serialization:
+==============
+>> The process of saving the state of an object permanently into the secondary memory is known as Serialization
+
+De-Serialization:
+================
+>> The process of reading the object from secondary memory to primary memory is known as De-Serialization
+
+What are the different ways to create an object?
+  1. new operator
+  		ClassName objectName = new ClassName();
+  		
+  2. clone method
+  		ClassName objectName = otherObjectName.clone();
+  
+  3. Using De-serialization
+  
+  4. Using class.forName("fully qualified name of a class").newInstance()
+  
+  5. By using factory methods
+		Calendar.getInstance();
+		Thread.currentThread();
+		
+Stream:
+=======
+Stream is nothing but a flow of data between source and destination
+source - keyboard, file
+Destination - file , console
+
+Stream 
+	=> Input Stream => reading operations
+ 	=> Output Stream => writing operations
+ 
+ I/O streams are further divided into 
+ 	=> Byte Oriented -> 1 byte at a time, slower in performance
+ 	=> Char oriented -> 2 bytes at a time, faster in performance
+ 	
+ If a class ends with Input stream or Output Stream => Byte oriented streams
+ If a class has extension like reader/ writer => Character oriented streams
+ 
+ While dealing with file operations may get exceptions like
+ 	- FileNotFoundException
+ 	- IOException etc.. (Checked exception category -> Compiler can check and complains - forces you to handle exception)
+ 	
+ RuntimeExceptions -> unchecked exceptions -> Compiler cannot check and hence will not complain
+ 
+ # it is possible to throw exceptions from constructors -> eg. FileOutputStream throws FileNotFoundException
+ 
+ # transient keyword  -> to restrict the data to be serialized in the file, 
+ 					  -> data cannot be written to file 
+
+# Interview question:
+  # How to serialize singleton Objects?
+	Problem: 
+	Deserializing gives a new instance
+	As per singleton concept it must have only one instance per JVM
+	Once you deserialize a singleton object it will return a new instance -- breaks the singleton concept
+	How to solve this?
+	
+	>> make a readResolve method of the Object class
+	
+	# A perfect singleton should:
+	1. Be thread safe
+	2. De-Serialization safe
+	3. Cloning -> should not be clonable
+	3. Reflection API -> may allow access for private constr and private properties
+	
+	JDK 1.7:
+	1. Try with resources - you don't need to have finally block - JVM automatically releases resources
+	2. Single catch clause with multiple exceptions
+	3. Closable interfaces
+	4. Strings in switch case
+	5. JDBC 4.1 API introduced
+	
+	JDK 1.6:
+	1. JDBC 4.0 API introduced
+  	
+  	=========================
+  	String and StringBuffers:
+  	==========================
+  	1. java.lang.String			- final
+								- String objects are immutable
+  								- exact characters memory
+  								 
+  	2. java.lang.StringBuffer	- final, 
+  								- thread safe
+  								- will give 15 additional character space
+  									
+  	3. java.lang.StringBuilder	- final,
+  								- JDK 1.5 
+  								- same as StrinBuffer but not thread safe
+  								
+  	4. java.lang.StringTokenizer 
+  	
+	In String class we have 15 constructors
+	
+	>> StringConstant pool
+		String s = new String("Java"); //this will have different heap memory irrespective of the content
+		string s1 = new String("Java");
+		
+		String ss = "Java";
+		String ss1 = "Java"; 
+		String ss2 = "java"; // string literal will have same memory if the content are the same
+		
+		Heap Memory
+		address of		 StringConstant Pool
+			ss				[Java] ss,ss1 			
+			s				[Java] s  		
+			s1				[Java] s1
+			ss1				  ss
+			ss2				[java] ss2
+			
+		>> what does intern() method do?
+			
+		

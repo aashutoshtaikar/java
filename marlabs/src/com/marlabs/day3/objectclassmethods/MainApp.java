@@ -5,6 +5,7 @@ import java.util.Set;
 
 public class MainApp {
 	public static void main(String[] args) {
+
 		Customer customer = new Customer(8, "Aashutosh", "asd1234", "Piscataway");
 		Class<? extends Customer> className = customer.getClass(); // class instance
 
