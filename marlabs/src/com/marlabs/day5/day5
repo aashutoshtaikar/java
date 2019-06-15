@@ -1,0 +1,60 @@
+======
+Day-5:
+======
+
+java.util.*
+Date 				===> Deprecated 					===> Basic date display (not suggested to use as deprecated)
+Calendar 			===> Abstract class					===> Calculations on date
+GregorianCalendar	===> Concrete class for calendar	===>
+StringTokenizer
+Random
+Locale
+Scanner
+etc..
+
+java.text.*
+	DateFormat
+	SimpleDateFormat
+============================
+
+>> Collections framework 
+ 
+Date Class:
+Month 		===> 0-Jan, 11-Dec
+Week		===> 0-Sunday, 6-Saturday
+
+Calendar Class:
+Month 		===> 0-Jan, 11-Dec
+Week Days 	===> 1-Sunday, 7-Saturday
+
+>>  DateFormat		  ===> java.text.*	===>AbstractClass
+			  Predef styles
+			   DateFormat.SHORT
+			   DateFormat.LONG
+			   DateFormat.MEDIUM
+			   DateFormat.FULL
+			   DateFormat.DEFAULT	
+			   
+			   use static factory method ==> DateFormat.getDateInstance(format,locale)
+			   
+>>	SimpleDateFormat  ===> java.text.*	===> ConcreteClass
+			   Own style formatting
+			   
+>> format method  ==> return type is String
+	parse method ===> return type is java.util.Date
+	
+	If you want to convert string representation of date into java.util.Date then we are using parse method
+	
+	Default locale is gathered from system 
+	Web application will be opened in different client browsers
+	How to identify the client locale? How to convert date into client locale format?
+	
+>> Sending a req from a web browser => Server
+ server converts this into => (HTTP request object contains client locale also) inside your servlet 
+ get the Client locale from that and based on that we can internally write our code 
+ 
+ >> String to date ==> use SimpleDateFormatobj.parse(StringDate)
+ 
+ >> public static String getWeekDayName(){
+ 		
+ 	}

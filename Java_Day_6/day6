@@ -1,0 +1,91 @@
+======
+Day-6:
+======
+
+	>> JUNIT 4.0
+	>> Code coverage reports - ECL Emma Code Coverage Tool
+	>> Collections framework introduction 
+	
+Next:
+	>> Collections
+	>> Multi-threading
+	>> JDK 1.8 concepts
+	>> JDBC Concepts
+	>> Design patterns - intro
+
+>> Compile Time errors 	==> IDE handled
+
+>> Runtime Errors		==> Exception handling
+
+>> Logical Errors 		==> Testing
+	
+	>> Manual Testing	==>
+						Black box testing
+	
+	
+	>> Automation Testing
+						==> Selenium
+						==> QTP
+						==> JUNIT
+							 =>White box testing
+							 
+=====
+Note:
+=====
+	======
+	JUNIT:
+	======
+	1. Add JNUIT to eclipse projects 
+		=> right click on project -> buildpath -> add libraries -> JNUIT 5.0	
+		OR
+		=> Maven -> pom file -> add path to JUNIT lib
+	
+	2. Test Case Methods:
+		=> Positive scenarios
+		=> Negative	scenarios as well
+		
+	3. Annotations:
+		@Test
+		@BeforeClass
+		@AfterClass
+		@Before
+		@After
+		@Ignore
+			etc...
+		
+		
+	4. Assert Methods
+		assertEquals();
+		assertNotEquals();
+		assertNull();
+		assertNotNull();
+		assertSame();
+		fail();
+			etc...
+	
+	Note:
+	=====
+	>> use fail() 
+		from Assert for the catch blocks in the cases where we do not expect the execution flow to go
+		use for, Whatever we dont want to test in that method
+		
+	>> 	Writing a TestSuite for the entire project
+	
+	JUNIT tutorials point:
+		Using assertions
+		Run test methods in specific order @FixedMethodOrder(MethodSorters.NAME_ASCENDING)
+		
+		>>NOT COVERED -> JUNIT 1.4 -> Parameterized Testing
+		
+		Parameterized JUnit:
+		====================
+		To run the same test over and over again using different values
+		Assume : http://junit.sourceforge.net/javadoc/org/junit/Assume.html
+		https://stackoverflow.com/questions/14082004/create-multiple-parameter-sets-in-one-parameterized-class-junit
+	 
+	Code Coverage tool:
+	ECL emma code coverage tool
+	===========================
+	
+	
+	

@@ -1,0 +1,37 @@
+1. Find out a middle index of a character which appears 3 times in a string
+
+2. Convert a String to alternate case
+Ex: howareyou - HoWaReYoU
+
+3. Count the upper case & lower case letters in a string
+
+4. Idfentify all the duplicate characters in a String
+Ex: helloworld - l, o
+
+5. Identify the first non-repeating character in a String
+
+6. Reverse a String without using reverse()
+
+7. Rotate a String with number of positions
+Ex: JavaConcepts - 3
+
+j	a	v	A	C	o	N	C	E	p	t	S
+p	t	s	j	a	v	A	C	o	N	C	E
+
+8. String str = "1110001111001110010000011110101";
+Count of 0's & 1's
+
+9. Identify the pairs of 10
+
+10. Identify the maximum consecutive 0's in a String
+
+11. Find out all the vowels in a String
+
+12. Repeat a String number of times and append it
+Ex: hello 4
+hellohellohellohello
+
+13. Split a string without using split()
+
+14. Delete sequence of characters from a String
+allthebest - 2, 5 - albest

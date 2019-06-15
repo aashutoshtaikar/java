@@ -44,7 +44,7 @@ public class MethodReferences {
 			System.out.println("Unknown state, cannot handle this");
 		}
 		finally {
-			System.out.println("program quiting...\n");			
+			System.out.println("program quiting...bye\n");			
 		}
 	}
 	
