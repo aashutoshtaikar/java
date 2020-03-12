@@ -1,0 +1,7 @@
+<project name = "sample" basedir = "." default = "notify">
+   <target name = "notify">
+      <java fork = "true" failonerror = "yes" classname = "src.AntTest">
+         <arg line = "admin@test.com"/>
+      </java>
+   </target>
+</project>
