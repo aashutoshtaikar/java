@@ -50,9 +50,9 @@ out/
 .settings/
 bin/
 tmp/
-/.metadata
-/.classpath
-.project
+**.metadata
+**.classpath
+**.project
 *.tmp
 *.bak
 *.swp
